@@ -1,0 +1,142 @@
+.signup-container{
+    padding: 20px;
+  }
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    }
+.signup-left{
+    background: url("../Images/spalsh.jpg") no-repeat;
+    background-size: cover; 
+    text-align: justify;
+    padding :20px 40px;
+    height: 449px;
+    color: #fff;
+    }
+.signup-right {
+    padding : 20px 40px;
+   }
+.signup-container input[type=text],.signup-container input[type=password]{
+    height: 25px;
+    width: 80%;
+    border: 2px solid #eee;
+  }
+.signup-right h4{
+    margin-block-end: auto;
+  }
+.date, .signup-right {
+     margin-top: 10px;
+  } 
+.signup-right sup{
+      font-size: medium;
+  }
+input[type='radio'] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+    border: 2px solid gray;
+    margin-top: 10px;
+}
+input[type="radio" i] {
+    margin-bottom: 1.5px;
+}
+input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 10% auto;
+    border-radius: 50%;
+ }
+input[type="radio"]:checked:before {
+    background: #00ABF0;
+} 
+input[type="radio"]:checked {
+  border-color: #00ABF0;
+ 
+}
+.signup-right button{
+    border: none;
+    display: block;
+    background-color: #00ABF0;
+    color: #fff;
+    margin-top: 12px;
+    height: 40px;
+    width: 40%;
+    border-radius: 4%;
+}
+.signup-right button:hover,.signup-right input[type="radio"]:hover
+{
+    cursor: pointer;
+}
+.date input[type="text"]{
+    width: 10%;
+    margin-right: 10px;
+    text-align: center;
+}
+.date label{
+    margin-right: 43px;
+    color: #4b4848;
+}
+.date label:nth-child(3){
+   margin-left: 5px; 
+}
+select{
+    border: none;
+    height: 30px;
+    margin-right: 12px;
+    color: #4b4848;
+    border: 2px solid #eee
+}
+.errorMsg {
+    color: #fff;
+    box-sizing: border-box;
+    height: 30px;
+    visibility: visible !important ;
+    background-color: rgb(245, 89, 89);
+    display: inline-block;
+    padding-top: 5px;
+    border-radius: 3px;
+    text-indent: 5px;
+    margin-top: 5px;
+    }
+.sucessMsg {
+    color: #6B8E23;
+    margin-bottom: 10px;
+  }
+@media (min-width:768px) and (max-width:1024px){
+    .date label{
+        margin-right: 28px;
+    }
+    .date label:nth-child(3){
+        margin-left: 16px;
+    }
+}
+@media (min-width:320px) and (max-width:767px){
+    .date label{
+        font-size: small;
+        margin-right: 32px;
+    }
+    .signup-right sup {
+        font-size: small;
+    }
+    .signup-left{
+        height: 250px;
+    }
+    .errorMsg{
+        font-size: small;
+    }
+    select{
+         margin-right: 7px;
+    }
+}
